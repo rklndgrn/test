@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/test/.vs/test/v15/.suo
+/test/.vs/test/v15/Browse.VC.db
+/test/.vs/test/v15/Browse.VC.opendb
