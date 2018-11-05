@@ -31,6 +31,9 @@ int main()
 		case 3:
 			StartTask03();
 			break;
+		case 4:
+			PrintSquare();
+			break;
 		default:
 			cout << "Uppgiften existerar inte!" << endl;
 			break;
