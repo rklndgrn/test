@@ -168,3 +168,32 @@ void StartTask03()
 		cout << "Varning! Texten innehåller inga ord!" << endl;
 	}
 }
+
+void PrintSquare()
+{
+	int squareSize;
+	cout << "Skriv in storlek på fyrkant: ";
+	cin >> squareSize;
+
+	for (size_t row = 0; row < squareSize + 2; row++)
+	{
+		if (row == 0 || row == squareSize + 1)
+		{
+			cout << "+";
+			for (size_t col = 0; col < squareSize; col++)
+			{
+				cout << "--";
+			}
+			cout << "+" << endl;
+		}
+		else
+		{
+			cout << "|";
+			for (size_t col = 0; col < squareSize; col++)
+			{
+				cout << "  ";
+			}
+			cout << "|" << endl;
+		}
+	}
+}
