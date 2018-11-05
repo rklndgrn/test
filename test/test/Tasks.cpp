@@ -121,3 +121,50 @@ void StartTask02()
 
 
 }
+
+void StartTask03()
+{
+	string word;
+
+	if (cin >> word)
+	{
+		string shortestWord{ word };
+		string longestWord{ word };
+		double numberOfWords{ 1 };
+		double sumWordLength{ (double)word.length() };
+
+		while (cin >> word)
+		{
+			sumWordLength += word.length();
+
+			if (word.length() > longestWord.length())
+			{
+				longestWord = word;
+			}
+
+			if (word.length() < shortestWord.length())
+			{
+				shortestWord = word;
+			}
+
+			numberOfWords++;
+		}
+
+		double avgWordLength;
+		avgWordLength = sumWordLength / numberOfWords;
+
+		cout << "Texten innehöll " << numberOfWords << " bokstäver." << endl;
+		cout << "Det kortaste ordet var \"" << shortestWord << "\" med "
+			<< shortestWord.length() << " bokstäver." << endl;
+		cout << "Det längsta ordet var \"" << longestWord << "\" med "
+			<< longestWord.length() << " bokstäver." << endl;
+		cout << "Medelordlängden var " << fixed << setprecision(0)
+			<< avgWordLength << " bokstäver." << endl;
+
+		cin.clear();
+	}
+	else
+	{
+		cout << "Varning! Texten innehåller inga ord!" << endl;
+	}
+}

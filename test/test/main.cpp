@@ -13,6 +13,7 @@ int main()
 	bool running{ true };
 	while (running)
 	{
+		taskNumber = 0;
 		cout << "Skriv in nummer på uppgift (0 avslutar): ";
 		cin >> taskNumber;
 
@@ -27,6 +28,9 @@ int main()
 		case 2:
 			StartTask02();
 			break;
+		case 3:
+			StartTask03();
+			break;
 		default:
 			cout << "Uppgiften existerar inte!" << endl;
 			break;
@@ -35,3 +39,4 @@ int main()
 
 	return 0;
 }
+
