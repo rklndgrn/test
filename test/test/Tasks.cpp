@@ -175,25 +175,32 @@ void PrintSquare()
 	cout << "Skriv in storlek på fyrkant: ";
 	cin >> squareSize;
 
-	for (size_t row = 0; row < squareSize + 2; row++)
+	if (squareSize >= 0)
 	{
-		if (row == 0 || row == squareSize + 1)
+		for (size_t row = 0; row < squareSize + 2; row++)
 		{
-			cout << "+";
-			for (size_t col = 0; col < squareSize; col++)
+			if (row == 0 || row == squareSize + 1)
 			{
-				cout << "--";
+				cout << "+";
+				for (size_t col = 0; col < squareSize; col++)
+				{
+					cout << "--";
+				}
+				cout << "+" << endl;
 			}
-			cout << "+" << endl;
-		}
-		else
-		{
-			cout << "|";
-			for (size_t col = 0; col < squareSize; col++)
+			else
 			{
-				cout << "  ";
+				cout << "|";
+				for (size_t col = 0; col < squareSize; col++)
+				{
+					cout << "  ";
+				}
+				cout << "|" << endl;
 			}
-			cout << "|" << endl;
 		}
+	}
+	else
+	{
+		cout << "Tal måste vara större än 0!" << endl;
 	}
 }
