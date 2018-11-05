@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main()
+void StartTask01()
 {
 	int number;
 	char exit;
@@ -83,9 +83,4 @@ int main()
 	cout << ", \"" << str << "\"";
 	cin >> str;
 	cout << " och \"" << str << "\"" << endl;
-
-
-	cin >> exit;
-
-	return 0;
 }
