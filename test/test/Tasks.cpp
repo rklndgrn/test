@@ -84,3 +84,40 @@ void StartTask01()
 	cin >> str;
 	cout << " och \"" << str << "\"" << endl;
 }
+
+void StartTask02()
+{
+	int startCelsius;
+	int endCelsius;
+	cout << "Ange startvärde: ";
+	cin >> startCelsius;
+	cout << "Ange slutvärde: ";
+	cin >> endCelsius;
+
+	while (endCelsius < startCelsius)
+	{
+		cout << "Felaktigt intervall!" << endl;
+		cout << "Ange slutvärde: ";
+		cin >> endCelsius;
+	}
+
+	cout << "Celsius" << setw(10) << "Kelvin" << setw(10) << "Farenheit"
+		<< setw(10) << "Réaumur" << endl;
+	cout << setw(36) << setfill('-') << "-" << endl;
+
+	float farenheit;
+	float kelvin;
+	float reaumur;
+	for (int i = startCelsius; i <= endCelsius; i++)
+	{
+		kelvin = i + 273.15;
+		farenheit = i * 1.8 + 32;
+		reaumur = i * 0.8;
+
+		cout << setfill(' ');
+		cout << fixed << setprecision(2) << setw(7) << i << setw(10)
+			<< kelvin << setw(10) << farenheit << setw(9) << reaumur << endl;
+	}
+
+
+}
