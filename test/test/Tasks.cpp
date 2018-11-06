@@ -9,7 +9,7 @@ void StartTask01()
 	int number;
 	char exit;
 
-	cout << "Här är lite kickass-code, right? [y=1/0=n]: ";
+	cout << "Här är lite kickass-code, right????? [y=1/0=n]: ";
 	cin >> number;
 	cout << "Oavsett vad du svarade har du fel " << number << endl;
 
