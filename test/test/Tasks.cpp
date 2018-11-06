@@ -14,6 +14,7 @@ void StartTask01()
 	cout << "Oavsett vad du svarade har du fel " << number << endl;
 
 	cout << "Skriv in ett heltal: ";
+
 	cin >> number;
 	cout << "Du skrev in talet " << number << endl;
 
