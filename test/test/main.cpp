@@ -14,7 +14,7 @@ int main()
 	while (running)
 	{
 		taskNumber = 0;
-		cout << "Skriv in nummer på uppgift (0 avslutar): ";
+		cout << "Apa. BLABLA. Skriv in nummer på uppgift (0 avslutar): ";
 		cin >> taskNumber;
 
 		switch (taskNumber)
