@@ -8,6 +8,11 @@ void StartTask01()
 {
 	int number;
 	char exit;
+
+	cout << "Tycker du att Jonas borde skaffa ett bättre namn på git? [y=1/0=n]: ";
+	cin >> number;
+	cout << "Oavsett vad du svarade har du fel " << number << endl;
+
 	cout << "Skriv in ett heltal: ";
 	cin >> number;
 	cout << "Du skrev in talet " << number << endl;
