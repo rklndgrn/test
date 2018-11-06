@@ -8,7 +8,7 @@ void StartTask01()
 {
 	int number;
 	char exit;
-	cout << "Skriv in ett heltal: ";
+	cout << "Detta är en ändring: Skriv in ett heltal: ";
 	cin >> number;
 	cout << "Du skrev in talet " << number << endl;
 
